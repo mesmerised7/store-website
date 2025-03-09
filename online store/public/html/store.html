@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/slider.css">
+    <title>store</title>
+</head>
+<body>
+    <div class="navbar">
+          <div class="leftnav">
+              <div class="comname">Manga Galaxy</div>
+              <div><a class="homelink" href="/">
+                <p>Home</p>
+              </a></div>
+          </div>
+          <div class="centernav">
+                <input class="search" placeholder="Search" type="text">
+                <button class="searchbtn">
+                    <img class="searchicon" src="https://supersimple.dev/projects/amazon/images/icons/search-icon.png" alt="">
+                </button>
+          </div>
+          <div class="rightnav">
+            <div class="rightnavbtns">
+               <button class="returnorderbtn">returns &amp; order</button>
+            </div>
+            <div class="rightnavbtns">
+               <a href="/checkout"><button class="cartbtn">
+                <div class="quantity">0</div>
+                cart
+               </button></a>
+               
+            </div>
+          </div>
+    </div>
+    <div class="frontcontent"></div>
+    <!-- <div class="footer">
+        <form id="formdata">
+         <input type="text" name="email">
+         <input class type="submit" value="submit">
+        </form>
+    </div>
+    <script>
+        const form=document.querySelector("#formdata")
+        async function formdata(){
+            const fd=new FormData(form);
+            try{
+                const response=await fetch('http://localhost:3000/submit',{
+                    method:'POST',
+                    body:formdata,
+                })
+                console.log(await response.json())
+            }
+            catch(e){
+            console.error(e)}
+        }
+        form.addEventListener('submit',(event)=>{
+            event.preventDefault();
+            formdata();
+            console.log('fggfgfhgg')
+        })
+    </script> -->
+    <script type="module" src="../script/store.js"></script>
+
+</body>
+</html>

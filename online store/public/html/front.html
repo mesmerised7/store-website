@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            padding: 0;
+            margin: 0;
+            color: white;
+        }
+        .container{
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+        .background{
+            position: relative;
+            flex: 1fr;
+            height: 580px;
+        }
+        .name{
+            font-family: Arial;
+            font-size: 150px;
+            position: absolute;
+            top: 5%;
+            left: 10%;
+        }
+        .homebtn{
+            position: absolute;
+            top: 60%;
+            left: 45%;
+            width: 80px;
+            height: 40px;
+            border-radius: 7px;
+            border: 0;
+            font-size: 17px;
+            color: white;
+            background-color: rgba(118, 9, 118, 0.642);
+            cursor: pointer;
+        }
+        .homebtn:hover{
+            background-color: rgba(118, 9, 118, 0.835);
+
+        }
+        .backimg{
+            width: 100%;
+            height: 100%;
+            ;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="background">
+            <!-- <video class="backimg" autoplay muted preload="auto" loop poster="video-poster.jpg">
+                <source src="../data/frontanimation.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video> -->
+                <img class="backimg" src="../data/testbackimg.jpg" alt="">
+        </div>
+        <h1 class="name">MangaGalaxy</h1>
+        <a href=""><button class="homebtn">Home</button></a>
+    </div>
+</body>
+</html>
